@@ -1,0 +1,395 @@
+html, body{
+    background-color: #141414;
+    padding: 0%;
+    margin: 0%;
+    font-family: helvetica, arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* css for navbar */
+header{
+    background-color: transparent;
+    position: fixed;
+    z-index:100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    transition: all ease 600ms;
+}
+
+header.black-bg{
+    background-color: rgb(20,20,20);
+}
+.container{
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+.header-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-cont, .right-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.brand-logo{
+    max-width: 110px;
+    cursor: pointer;
+}
+
+.main-nav {
+    list-style: none;
+    display: inline-flex;
+    flex-direction: row;
+}
+.nav-items a{
+    color: #e5e5e5;
+    margin-right: 20px ;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 250;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    left: 4.5%;
+    top: 4px;
+}
+
+.line{
+    width: 24px;
+    background-color: white;
+    height: 2px;
+    margin: 5px 3px;
+}
+
+
+.active a{
+    color: white;
+    font-weight: 400;
+}
+
+.right-cont svg,.right-cont img{
+    cursor: pointer;
+}
+
+.bell{
+    margin-right: 20px;
+    margin-left: 4px;
+    font-weight: 100;
+}
+
+.right-cont svg{
+    color: white;
+}
+
+.search-menu{
+    display: flex;
+    max-height: 36px;
+}
+
+.search-icon{
+    margin-right: 22px;
+}
+
+.hide-navbar{
+    display: none;
+}
+
+.icon-click{
+    background-color: black;
+    height: 34px;
+    width: 30px;
+    padding: 0 0px 0 5px;
+    border: 1px solid #fff;
+    border-right: 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.search-navbar{
+    display: none;
+    margin-right: 3px;
+    font-size: 1.1rem;
+    width: 100%;
+    border: 1px solid white;
+    color: grey;
+    background-color: #141414;
+    padding: 0 6px 0 6px; 
+    margin-right: 20px;
+    border-left: 0px;
+    outline: none;
+}
+
+.search-nav{
+    display: none;
+    margin-right: 3px;
+    font-size: 1.1rem;
+    width: 100%;
+    border: 1px solid white;
+    height: 36px;
+    color: grey;
+    background-color: #141414;
+    padding: 0 6px 0 6px; 
+    margin-right: 20px;
+    border-left: 0px;
+    outline: none;
+}
+
+
+.search-click{
+    display: inline-block;
+    color: white;
+}
+
+.right-cont{
+    color: white;
+}
+
+.right-cont img{
+    max-width: 40px;
+}
+
+/* banner-section */
+.banner-section{
+    max-width: 100%;
+    min-height: 98vh; 
+    padding-top: 80px;
+    position: relative;
+    background-repeat:no-repeat;
+    background-size: cover; 
+}
+
+.banner-cont{
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+
+.banner_title{
+    color: white;
+    font-size: 84px;
+    line-height: 1.1;
+    margin: 0;
+    margin-top: 180px;
+    margin-bottom: 16px;
+    max-width: 40%;
+}
+
+.banner_overview{
+    font-size: 16.4px;
+    line-height: normal;
+    max-width: 40%;
+    font-weight: 580;
+    color: rgb(255, 255, 255);
+}
+
+.action-buttons-cont{
+    display: flex;
+    align-items: center;
+    flex-direction: row;  
+}
+
+.action-button{
+    border: hidden;
+    background-color: white;
+    margin-right: 10px;
+    padding: 12px 24px;
+    border-radius: 4px;
+    flex-direction: row ;
+    cursor:pointer;
+    font-size: 16px;
+    font-weight:700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    z-index: 100%;
+    /* gap: 8px; */
+}
+
+.moreinfo{
+    background-color: rgba(109, 109, 110, 0.7);
+    color: white;
+}
+
+.banner_fadetop{
+    height: 70px;
+    background:linear-gradient(360deg,
+        transparent,
+        rgba(37,37,37,.61),
+        #141414
+    ); 
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+}
+
+.banner_fadeBottom{
+    height: 140px;
+    background:linear-gradient(180deg,
+        transparent,
+        rgba(37,37,37,.61),
+        #141414
+    ); 
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* movie-sections */
+
+.movies-cont{
+    margin-top: 35px;
+}
+
+.movies-section-heading{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+.movies-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.movie-item {
+    width: 245px;
+    height: 138px;
+    object-fit: contain;
+    margin-right: 1.8px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.movie-item img{
+    width: inherit;
+}
+
+.movie-item .iframe-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+    border: none;
+    outline: none;
+}
+.movie-item:hover .iframe-wrap{
+    display: block;
+}
+
+.movie-item:hover{
+    transform: scale(1.23);
+    transition: transform ease 300ms;
+}
+.Explore-tag{
+    font-size: 13px;
+    color: #54b9c5;
+    display: none;
+    margin-left: 6px;
+}
+
+.movies-section-heading:hover .Explore-tag{
+    display: inline-block;
+}
+
+
+/* footer */
+#footer{
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-cont{
+    width: 980px;
+    padding-top: 35px;
+    height: 213.094px;
+    padding-left: 180px;
+    padding-right: 130px;
+}
+
+.links{
+    display:flex ;
+    padding-top: 20px;
+    padding-left: 102px;
+    width: 500px;
+    gap:4px;
+    transform: scale(1.5);
+}
+
+.query-link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-ul{
+    margin-top: 8px;
+    padding: 0;
+    padding-bottom: 2px;
+}
+
+ul a{
+    display: block;
+    text-decoration: none;
+    color: grey;
+    font-size: 0.85rem;
+    margin-top: 10px;
+}
+
+
+.query-link :hover{
+    text-decoration:underline;
+    color: white;
+}
+
+.service-code{
+    font-size: 13px;
+    margin-bottom: 18px;
+    padding: 0.5rem;
+    background:transparent;
+    border: 1px solid grey;
+    color: grey;
+}
+
+.service-code:hover{
+    color: white;
+}
+
+.footer-end{
+    color: grey;
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+
+

@@ -1,0 +1,121 @@
+@media only screen and (max-width:450px){
+    header{
+        background-color: black;
+        height:42px;
+        /* width: 412px; */
+        max-width: 100%;
+    }
+    .main-nav{
+        flex-direction: column;
+        text-align: start;
+        padding: 0 0 0 17px;
+        border: 3px solid black;
+        margin: 40px 0px 0px 0px;
+        background-color: black;
+        width: 230px;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        display: none;
+    }
+
+    .hide-navbar{
+        display: inline-block;
+    }
+
+    .brand-logo{
+        left: 0%;
+        margin: 0px 0px 0px 58px;
+        position: absolute;
+        top: -12px;
+    }
+    .right-cont svg{
+        display: none;
+    }
+    .right-cont img{
+        display: none;
+    }
+
+    .right-cont{
+      width: 50%;
+    }
+    .search-nav{
+        /* display: block; */
+        width: 96px;
+        font-size: 16px;
+        color: #fff;
+        position: fixed;
+        top: 9px;
+        left: 300px;
+        /* right: 13px; */
+        border: 1px solid #ccc;
+        background:transparent;
+    }
+
+    .search-navbar{
+        display: block;
+        width: 96px;
+        font-size: 16px;
+        color: #fff;
+        position: fixed;
+        height: 27px;
+        top: 6px;
+        left: 300px;
+        /* right: 13px; */
+        border: 1px solid #ccc;
+        background:transparent;
+    }
+
+    .h-foot-resp {
+        display: none;
+    }
+    .footer-end{
+        display: none;
+    }
+    .footer-cont{
+        width: 412px;
+        height: 60px;
+        padding:0px 0px 10px 0px;
+    }
+    .links{
+        padding-left: 19px;
+        width: 412px;
+        padding-top:0px;
+    }
+    .banner-cont{
+        display: none;
+    }
+    .banner-section{
+        display: none;
+    }
+    .movies-section-heading{
+        margin-bottom: 10px;
+        padding: 12px 0 0 0;
+    }
+    #movies-cont{
+        padding: 0 0 0 20px;
+    }
+    .movie-item img {
+        width: 185px;
+    }
+    .movie-item{
+        height: 103px;
+    }
+    .iframe-wrap{
+        width: 184px;
+    }
+}
+
+
+@media (min-width:932px) and (max-width:1300px) {
+    
+}
+
+
+@media (min-width:450px) and (max-width:932px) {
+    
+}
+
+
